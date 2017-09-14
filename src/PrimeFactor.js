@@ -1,23 +1,18 @@
-const PrimeFactors = function() {};
+const PrimeFactors = function () {};
 
 PrimeFactors.prototype.of = (n) => {
-    const result = [];
-    while(n > 1) {
-        if(0 === n % 2){
-            result.push(2);
-            n /= 2
+    let result = [];
+    while (n > 1) {
+        let divisor = 2
+        while (n <= n) {
+            while (0 === n % divisor) {
+                result.push(divisor);
+                n /= divisor;
+            }
         }
-        else if(0 === n % 3){
-            result.push(3);
-            n /= 3
-        }
-        else {
-            result.push(2);
-            break;
-        }
+        ++divisor;
     }
     return result;
 }
 
 module.exports = new PrimeFactors();
-
