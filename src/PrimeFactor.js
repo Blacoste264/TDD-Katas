@@ -1,13 +1,19 @@
 const PrimeFactors = function() {};
 
 PrimeFactors.prototype.of = (n) => {
-    if(n === 2) {
-        return [2];
+    const result = [];
+    while(n > 1) {
+        if(0 === n % 2){
+            result.push(2);
+            n /= 2
+        }
+        else {
+            result.push(2);
+            break;
+        }
     }
-    else if(n === 3) {
-        return [3]
-    }
-    return [];
+    return result;
 }
+
 module.exports = new PrimeFactors();
 
