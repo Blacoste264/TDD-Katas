@@ -7,6 +7,10 @@ PrimeFactors.prototype.of = (n) => {
             result.push(2);
             n /= 2
         }
+        else if(0 === n % 3){
+            result.push(3);
+            n /= 3
+        }
         else {
             result.push(2);
             break;

@@ -9,5 +9,7 @@ describe("Prime Factorization", function() {
         expect(primeFactors.of(5)).toEqual([5]);
         expect(primeFactors.of(6)).toEqual([2, 3]);
         expect(primeFactors.of(7)).toEqual([7]);
+        expect(primeFactors.of(8)).toEqual([2, 2, 2]);
+        expect(primeFactors.of(8)).toEqual([3, 3]);
     })
 })
