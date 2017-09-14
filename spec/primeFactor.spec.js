@@ -13,3 +13,9 @@ describe("Prime Factorization", function() {
         expect(primeFactors.of(8)).toEqual([3, 3]);
     })
 })
+
+describe("RomanNumeral", function() {
+    it("converts numbers into Roman Numerals", function() {
+
+    })
+})
