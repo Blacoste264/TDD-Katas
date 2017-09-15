@@ -2,10 +2,18 @@ const RomanNumerals = function (){};
 
 RomanNumerals.prototype.fromNumber = function(n) {
     let result = "";
-    while (n > 0) {
-        result += "I"
-        --n;
-    }
+
+    const numerals = [
+        {value: 4, numeral: "IV"},
+        {value: 1, numeral: "I"}
+    ];
+
+    numerals.forEach((item) => {
+        while(n >= item.value) {
+            result += item.numeral;
+            n -= item.value;
+        }
+    })
     return result;
 }
 
