@@ -5,5 +5,6 @@ describe("Bowling", () => {
         for (i = 0; i < 20; ++i) {
             bowling.addThrow(0);
         }  
+        expect(bowling.getScore()).toBe(0);
     })
 })
