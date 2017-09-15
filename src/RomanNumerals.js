@@ -22,13 +22,11 @@ const numerals = [
 
 RomanNumerals.prototype.fromNumber = function (n) {
     let result = "";
-    // numerals.forEach((item) => {
-        for (let i = 0; i < numerals.length; ++i) {
-            const item = numerals[i];
+    numerals.forEach((item) => {
         for (; n >= item.value; n -= item.value) {
             result += item.numeral;
         }
-    }
+    })
     return result;
 }
 
