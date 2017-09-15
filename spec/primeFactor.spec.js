@@ -1,5 +1,4 @@
 const primeFactors = require("../src/PrimeFactor")
-const RomanNumerals = require("../src/RomanNumeral")
 
 describe("Prime Factorization", function() {
     it("Calculates the Prime Factorization of an integer", function() {
@@ -12,12 +11,5 @@ describe("Prime Factorization", function() {
         expect(primeFactors.of(7)).toEqual([7]);
         expect(primeFactors.of(8)).toEqual([2, 2, 2]);
         expect(primeFactors.of(8)).toEqual([3, 3]);
-    })
-})
-
-describe("RomanNumeral", function() {
-    it("converts numbers into Roman Numerals", function() {
-        expect(RomanNumerals.fromNumber(1).toBe("I"));
-
     })
 })
