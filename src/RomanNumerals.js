@@ -20,7 +20,7 @@ const numerals = [
     numeral(1, "I")
 ];
 
-RomanNumerals.prototype.fromNumber = function (n) {
+RomanNumerals.prototype.fromNumber = (n) => {
     let result = "";
     numerals.forEach((item) => {
         for (; n >= item.value; n -= item.value) {
@@ -30,4 +30,4 @@ RomanNumerals.prototype.fromNumber = function (n) {
     return result;
 }
 
-module.exports = new RomanNumerals();
+module.exports = new RomanNumerals;
