@@ -1,13 +1,12 @@
 const RomanNumerals = function (){};
 
 RomanNumerals.prototype.fromNumber = function(n) {
-    if (n === 3) {
-        return "III"
+    let result = "";
+    while (n > 0) {
+        result += "I"
+        --n;
     }
-    if (n === 2) {
-        return "II"
-    }
-    return "I";
+    return result;
 }
 
 module.exports = new RomanNumerals();
