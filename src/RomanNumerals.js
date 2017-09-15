@@ -9,9 +9,8 @@ RomanNumerals.prototype.fromNumber = function(n) {
     ];
 
     numerals.forEach((item) => {
-        while(n >= item.value) {
+        for(; n >= item.value; n -= item.value) {
             result += item.numeral;
-            n -= item.value;
         }
     })
     return result;
