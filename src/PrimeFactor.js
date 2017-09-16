@@ -1,5 +1,7 @@
+// Constructor method for PrimeFactors class
 const PrimeFactors = function () {};
 
+// Add new method "of" to PrimeFactors class
 PrimeFactors.prototype.of = (n) => {
     let result = [];
     for (let divisor = 2; divisor <= n; ++divisor ){
@@ -10,4 +12,5 @@ PrimeFactors.prototype.of = (n) => {
     return result;
 }
 
+// Export new instance of PrimeFactors
 module.exports = new PrimeFactors();
