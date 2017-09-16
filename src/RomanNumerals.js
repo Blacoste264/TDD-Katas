@@ -1,5 +1,5 @@
 const RomanNumerals = function () {};
-
+// Function to quickly create objects containing value and numeral
 const numeral = (value, numeral) => {
     return {value: value, numeral: numeral};
 }
@@ -19,7 +19,7 @@ const numerals = [
     numeral(4, "IV"),
     numeral(1, "I")
 ];
-
+// Create new fromNumber method for Cards class
 RomanNumerals.prototype.fromNumber = (n) => {
     let result = "";
     numerals.forEach((item) => {
@@ -29,5 +29,5 @@ RomanNumerals.prototype.fromNumber = (n) => {
     })
     return result;
 }
-
+// Export new RomanNumerals object
 module.exports = new RomanNumerals;
