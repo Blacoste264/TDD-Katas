@@ -29,5 +29,5 @@ RomanNumerals.prototype.fromNumber = (n) => {
     })
     return result;
 }
-// Export new RomanNumerals object
+// Export instance of RomanNumerals class
 module.exports = new RomanNumerals;
