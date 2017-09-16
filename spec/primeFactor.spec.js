@@ -1,5 +1,7 @@
 const primeFactors = require("../src/PrimeFactor")
 
+// Tests PrimeFactors class
+
 describe("Prime Factorization", () => {
     it("Calculates the Prime Factorization of an integer", () => {
         expect(primeFactors.of(1)).toEqual([]);
